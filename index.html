@@ -29,26 +29,38 @@
             }
           }
         }
-      </script>
+        </script>
       <style type="text/tailwindcss">
         @layer components{
           .container{
             margin: 0 auto;
+            border: 1px solid red;
+            padding: 0 10px
           }
           .navbtn{
-            @apply flex items-center gap-2 text-black text-base font-extrabold px-5 py-3 rounded-full bg-[#ABEF5F80];
+            @apply flex items-center gap-2 text-black text-base font-extrabold px-5 py-3 rounded-full;
+          }
+          .green-1{
+            @apply bg-[#ABEF5F80];
+          }
+          .green-2{
+            @apply bg-[#ABEF5F];
+          }
+          .green-3{
+            @apply bg-[#ABEF5F];
           }
           .btn-icon{
             @apply !w-8 !h-8 rounded-[50%] flex justify-center items-center
           }
         }
 
-      </style>
+        </style>
 </head>
 <body class="font-manrope">
-    <header>
+  <!-- header section start -->
+  <header>
         <div class="container">
-            <div class="navbar flex justify-between items-center bg-base-100">
+          <div class="navbar flex justify-between items-center bg-base-100">
                 <div class="navbar-start w-auto">
                   <div class="logo">
                     <a href="#">
@@ -83,7 +95,7 @@
                     </div>
                     <ul
                       tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-5">
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-7 w-52 p-2 shadow right-0 gap-5">
                       <li><a href="#" class="text-base font-extrabold text-secondary capitalize">Home</a></li>
                       <li><a href="#" class="text-base text-secondary capitalize  hover:text-black">Services</a></li>
                       <li><a href="#" class="text-base text-secondary capitalize  hover:text-black">Portfolio</a></li>
@@ -101,6 +113,47 @@
               </div>
         </div>
     </header>
+    <!-- header section end -->
+    <!-- banner section start -->
+     <section class="my-10">
+      <div class="container">
+        <div class="banner-container flex flex-col justify-center items-center gap-y-5">
+          <div class="banner-image">
+            <img src="assets/banner.png" alt="banner iamge">
+          </div>
+          <div class="banner-text flex flex-col justify-center items-center max-w-6xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl text-primary font-extrabold text-center !leading-tight ">A barn house of this design has a striking appearance</h1>
+            <p class="text-secondary font-medium text-center leading-normal py-7 max-w-4xl mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <button class="navbtn bg-[#ABEF5F80]">
+              View Details
+              <div class="btn-icon bg-[#ABEF5F]">
+                <img src="assets/arrow-2.png" alt="">
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- banner section end -->
+    <!-- spaces section start -->
+     <section class="bg-white my-16 lg:jmy-20">
+      <div class="container">
+        <div class="space-container grid grid-cols-2">
+           <div class="text bg-gray-300">
+            <div class="button relative">
+              <img src="assets/Vector.png" class="absolute top-[-84%] left-[-7%] hidden lg:block" alt="">
+              <button class="navbtn">
+                <img src="assets/arrow-3.png" alt="">
+                About us
+              </button>
+            </div>
+
+           </div>
+           <div class="image"></div>
+        </div>
+      </div>
+     </section>
+    <!-- spaces section end -->
 
 
 
