@@ -41,13 +41,13 @@
             @apply flex items-center gap-2 text-black text-base font-extrabold px-5 py-3 rounded-full;
           }
           .green-1{
-            @apply bg-[#ABEF5F80];
+            @apply bg-[#ABEF5F];
           }
           .green-2{
             @apply bg-[#ABEF5F];
           }
           .green-3{
-            @apply bg-[#ABEF5F];
+            @apply bg-[#ABEF5F80];
           }
           .btn-icon{
             @apply !w-8 !h-8 rounded-[50%] flex justify-center items-center
@@ -115,7 +115,7 @@
     </header>
     <!-- header section end -->
     <!-- banner section start -->
-     <section class="my-10">
+     <section class=" bg-white my-10">
       <div class="container">
         <div class="banner-container flex flex-col justify-center items-center gap-y-5">
           <div class="banner-image">
@@ -179,7 +179,7 @@
      </section>
     <!-- spaces section end -->
     <!-- counter section start -->
-    <section>
+    <section class="bg-white my-16 lg:my20">
       <div class="container">
         <div class="counter-container grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div class="inner-item flex flex-col items-center justify-center text-center">
@@ -218,8 +218,13 @@
     <section>
       <div class="container">
         <div class="work-container">
-          <div class="work-heading">
-            
+          <div class="work-heading max-w-2xl mx-auto flex flex-col justify-center items-center text-center gap-y-4">
+             <button class="navbtn green-3">
+              <img src="assets/arrow-3.png" alt="">
+              How we works
+             </button>
+             <h2 class="text-3xl md:text-4xl text-primary font-extrabold !leading-tight">Our Works Process</h2>
+             <p class="text-base font-medium text-secondary leading-normal">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
           </div>
           <div class="work-card"></div>
         </div>
