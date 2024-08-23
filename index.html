@@ -34,7 +34,6 @@
         @layer components{
           .container{
             margin: 0 auto;
-            border: 1px solid red;
             padding: 0 10px
           }
           .navbtn{
@@ -96,8 +95,8 @@
                     </button>
                   </ul>
                   <div class="dropdown">
-                    <div tabindex="0" role="button" class="lg:hidden bg-[#b3b2b2] rounded-full h-8 w-8 flex justify-center items-center">
-                      <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+                    <div tabindex="0" role="button" class="lg:hidden bg-[#b3b2b267] rounded-full h-8 w-8 flex justify-center items-center">
+                      <i class="fa-solid fa-bars fa-lg" style="color: #5f5c5c;"></i>
                     </div>
                     <ul
                       tabindex="0"
@@ -459,7 +458,7 @@
          <input type="text" name="" id="" class="bg-white text-base text-[#A0A0A0] font-medium  p-4 focus:outline-0 !focus-visible:outline-0 rounded-3xl"  placeholder="Last Name*">
          <input type="tel" name="" id=""  class="bg-white text-base text-[#A0A0A0] font-medium  p-4 focus:outline-0 !focus-visible:outline-0 rounded-3xl" placeholder="Phone Number*">
          <input type="email" name="" id="" class="bg-white  text-base text-[#A0A0A0] font-medium  p-4 focus:outline-0 !focus-visible:outline-0 rounded-3xl"  placeholder="Email Number*">
-         <textarea placeholder="Write your message here..." class="col-span-full focus:outline-0 !focus-visible:outline-0 p-4 rounded-3xl"></textarea>
+         <textarea placeholder="Write your message here..." rows="8" cols="50" class="col-span-full focus:outline-0 !focus-visible:outline-0 p-4 rounded-3xl"></textarea>
          <button class="navbtn flex justify-center bg-[#ABEF5F] w-full col-span-full">
           Send Mail
           <div class="btn-icon bg-black">
@@ -472,23 +471,30 @@
    </section>
   <!-- form section end -->
   <!-- footer section start -->
-   <section>
+   <section class="bg-[#1C1C1C] py-10">
     <div class="container">
-
+        <div class="footer-container w-[750px] max-w-full mx-auto text-center flex flex-col justify-center items-center">
+          <div class="logo">
+            <img src="assets/f-logo.png" class="text-white" alt="">
+          </div>
+          <p class="text-base font-medium text-secondary leading-normal py-3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <ul class=" flex flex-col sm:flex-row justify-between gap-5 w-full my-10">
+            <li><a href="#" class="text-base font-extrabold text-secondary capitalize hover:text-slate-300">Home</a></li>
+            <li><a href="#" class="text-base text-secondary capitalize  hover:text-slate-300">Services</a></li>
+            <li><a href="#" class="text-base text-secondary capitalize  hover:text-slate-300">Portfolio</a></li>
+            <li><a href="#" class="text-base text-secondary capitalize  hover:text-slate-300">Blogs</a></li>
+            <li><a href="#" class="text-base text-secondary capitalize  hover:text-slate-300">Contact Us</a></li>
+          </ul>
+          <button class="navbtn bg-[#ABEF5F] w-full flex justify-center sm:w-auto">
+            Book Consult
+            <div class="btn-icon bg-black">
+              <img src="assets/arrow.png" class="" alt="">
+            </div>
+          </button>
+        </div>
     </div>
    </section>
   <!-- footer section end -->
-
-
-
-
-
-
-
-
-
-
-
     <!-- font-awesome link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
